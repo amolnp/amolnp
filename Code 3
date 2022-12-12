@@ -1,0 +1,26 @@
+ Function to calculate minimum marks frequency
+
+def minMFreq(numberOfStudent, listOfStudent):
+    count = 0
+    check = minMarks(listOfStudent, numberOfStudent)
+
+    for i in range(numberOfStudent):
+        if check == listOfStudent[i]:
+            count += 1
+    return count
+
+
+# Function for Minimum------------------------------------------->>>
+
+def minMarks(listOfStudent, numberOfStudent):
+    min = listOfStudent[0]
+    for i in range(numberOfStudent):
+        if min > listOfStudent[i]:
+            min = listOfStudent[i]
+
+    return min
+
+
+# Function for Average--------------------------------->>>
+
+def averageOfMarks(listOfStuden
